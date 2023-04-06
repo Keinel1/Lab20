@@ -6,13 +6,13 @@ class Program
     {
         for (int i = 100; i < 1000; i++)
         {
-            int a = i / 100;
-            int b = (i / 10) % 10;
-            int c = i % 10;
+            int a = i / 100; // первая цифра
+            int b = (i / 10) % 10; // вторая цифра 
+            int c = i % 10; // третья цифра 
 
-            if (a != b && a != c && b != c)
+            if (a != b && a != c && b != c) // проверяем, что все цифры различны
             {
-                Console.WriteLine(i);
+                Console.WriteLine(i); // выводим число 
             }
         }
     }
